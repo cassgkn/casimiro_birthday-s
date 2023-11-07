@@ -1,0 +1,67 @@
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/eu-nova-sem-fundo.png);
+    background-position-x: 36%;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text{
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 80px;
+        display: flex;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        background-size: 45%;
+        background-position-x: 50%;
+        display: block;
+        flex-direction: column;
+
+        &__logo {
+            margin-top: 80px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 26px;
+            margin: 24px 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__logo {
+            margin-top: 180px;
+        }
+
+        &__text {
+            font-size: 28px;
+            line-height: 32px;
+            margin: 18px 0;
+        }
+    }
+}
