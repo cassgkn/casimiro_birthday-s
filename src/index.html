@@ -9,16 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/Logo_birthday_Cass.svg" alt="logo do aniversario">
             <p class="hero__text">
-                A contagem regressiva para o meu próximo aniversário está em 400d 12h 20m 15s
+                A contagem regressiva para meu próximo aniversário está em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Data do Anivesário:</b>
+                        10/Agosto/2024
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
+    <section class="event">
+        <div class="container" data-aos="fade-in">
+            <img class="event__image" src="./images/carta.jpg" alt="carta convite">
+            <div class="event__details">
+                <h2 class="event__detail__title">Convite</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi voluptatum nam odio magnam repudiandae iure nihil similique laboriosam accusamus, aperiam pariatur in tenetur ratione quo dolorem aliquam. Nulla, saepe?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet tempora deserunt dolores culpa rerum repudiandae esse voluptate molestiae quaerat ipsa dolorum ab architecto quas nemo, corrupti similique! Ex, quisquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quis soluta sunt facere consequuntur, quae debitis rem, similique aperiam magni amet beatae rerum ipsum, consectetur ipsa nam perspiciatis quos ipsam.
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

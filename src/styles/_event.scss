@@ -1,0 +1,48 @@
+
+.event {
+    padding: 40px 0;
+    .container {
+        display: flex;
+        margin-top: 20px;
+
+    }
+
+    &__image {
+        width: 500px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    &__detail {
+        margin: 0;
+
+        &__title {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            font-size: 20px;
+            line-height: 28px;
+            width: 100%;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__detail {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}
